@@ -9,6 +9,10 @@
     "build": "webpack -p",
     "dev": "webpack-dev-server --open"
   },
+  "engines": {
+    "node": "12.2.0",
+    "npm": "6.9.0"
+  },
   "dependencies": {
     "express": "^4.17.0",
     "react": "^16.8.6",
