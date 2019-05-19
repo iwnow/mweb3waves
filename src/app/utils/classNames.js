@@ -3,7 +3,7 @@
  * @param  {...string} args 
  */
 export function classNames(...args) {
-    return args.join(' ');
+    return args.filter(Boolean).join(' ');
 }
 
 export default classNames;
