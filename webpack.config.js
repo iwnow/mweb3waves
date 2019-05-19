@@ -15,7 +15,7 @@ module.exports = {
   resolve: {
     extensions: [".js", ".jsx"]
   },
-  devtool: isProd ? null : 'source-map',
+  devtool: isProd ? false : 'source-map',
   module: {
     rules: [
       { test: /\.txt$/, use: "raw-loader" },
