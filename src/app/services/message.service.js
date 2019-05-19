@@ -1,7 +1,9 @@
-export const MessageService = (({ alert, confirm, prompt }) => {
+export const MessageService = (window => {
 
     return {
-        alert, confirm, prompt
+        alert: (message) => window.alert(message),
+        confirm: (message) => window.confirm(message),
+        prompt: (message, _default) => window.prompt(message, _default)
     }
 
 })(window);

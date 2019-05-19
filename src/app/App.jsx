@@ -8,7 +8,7 @@ import {WavesKeeperClient, MessageService} from './services';
 export default class App extends Component {
     auth() {
         if (WavesKeeperClient.isAvailable()) {
-            WavesKeeperClient.auth({ data: 'test data' }).then(console.log).catch(console.log);
+            WavesKeeperClient.auth({ data: 'test data' }).then(r => console.log(r)).catch(err => console.error(err));
         } else {
             MessageService.alert(WavesKeeperClient.availableError());
         }
